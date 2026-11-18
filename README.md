@@ -1,26 +1,32 @@
 # خیابان‌باز | Street Rush
 
-An original 2D side-view arcade city-driving game made with Godot 4.7.2.
+یک بازی آرکید دوبعدی رانندگی از نمای بغل، ساخته‌شده با Godot 4.7.2 و با تمرکز بر Android افقی.
 
-## First playable prototype (0.1)
+## امکانات نسخه 1.0
 
-- Side-view arcade driving with acceleration, braking, nitro and jumping.
-- Original vector-drawn car, traffic, coins, nitro pickups and city skyline.
-- Touch controls for Android and keyboard controls for desktop.
-- Distance and coin HUD, a finish line and replay flow.
-- Landscape layout designed for phones.
+- منوی فارسی و انتخاب از میان ۸ مرحله با محیط‌ها و چالش‌های متفاوت
+- گیم‌پلی مسابقه‌ای با گاز، ترمز، پرش و نیترو
+- ترافیک، برخورد و نوار آسیب خودرو
+- جمع‌آوری سکه و شارژ نیترو در مسیر
+- گاراژ با ۵ خودروی قابل انتخاب و خریدنی
+- ارتقای موتور و نیترو با اعتبار داخل بازی
+- سیستم پیشرفت مرحله‌ها، پاداش، آمار و ذخیره خودکار
+- توقف، ادامه، شروع مجدد و صفحه نتیجه مسابقه
+- کنترل لمسی برای موبایل و کنترل صفحه‌کلید برای دسکتاپ
+- گرافیک برداری اختصاصی و بدون وابستگی به فایل‌های تصویری خارجی
 
-## Controls
+## کنترل‌ها
 
-| Action | Keyboard | Touch |
+| عملکرد | صفحه‌کلید | موبایل |
 |---|---|---|
-| Accelerate | D / Right Arrow | گاز |
-| Brake | A / Left Arrow | ترمز |
-| Nitro | Shift | نیترو |
-| Jump | Space / Up Arrow | پرش |
+| گاز | D / فلش راست | دکمه گاز |
+| ترمز | A / فلش چپ | دکمه ترمز |
+| نیترو | Shift | دکمه نیترو |
+| پرش | Space / فلش بالا | دکمه پرش |
+| توقف | Esc | دکمه Ⅱ |
 
-## Build
+## ساخت APK
 
-Open this folder in Godot 4.7.2. The Android export preset is named **Android**. GitHub Actions builds an APK on every push to `main` and uploads it as the `StreetRush-Android-APK` artifact.
+پروژه را با Godot 4.7.2 باز کنید. preset خروجی Android در `export_presets.cfg` تعریف شده است. با هر push به شاخه `main`، GitHub Actions تلاش می‌کند APK اندروید بسازد و به‌صورت artifact منتشر کند.
 
-This is an original project. It does not include code, art, audio, or other assets copied from another game.
+این پروژه مستقل و اصیل است. نسخه فعلی یک بازی کاملِ قابل‌بازی با مسیر پیشرفت و گاراژ است؛ با این حال، هنوز تست نهایی روی طیف مختلف گوشی‌ها و افزودن موسیقی/افکت‌های صوتی واقعی نیازمند کار جداگانه است.
