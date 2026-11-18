@@ -232,7 +232,7 @@ func _show_stage_select() -> void:
 	_label(root, "مرحله‌های بازشده: %d از %d" % [unlocked_stage + 1, STAGES.size()], Rect2(700, 112, 480, 36), 18, Color("#83d6d1"))
 	for i in range(STAGES.size()):
 		var col := i % 4
-		var row := i / 4
+		var row := int(i / 4)
 		var x := 90.0 + col * 285.0
 		var y := 205.0 + row * 190.0
 		var data: Dictionary = STAGES[i]
