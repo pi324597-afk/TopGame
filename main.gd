@@ -346,7 +346,7 @@ func _draw_pickups() -> void:
 			draw_circle(Vector2(sx, sy), 12.0, Color("#ffe58b"))
 			draw_circle(Vector2(sx, sy), 5.0, Color("#d88a22"))
 		else:
-			draw_rounded_rect(Rect2(sx - 15, sy - 23, 30, 46), 8, Color("#27c7b5"))
+			draw_rect(Rect2(sx - 15, sy - 23, 30, 46), Color("#27c7b5"))
 			draw_line(Vector2(sx - 5, sy + 12), Vector2(sx + 7, sy - 10), Color.WHITE, 5.0, true)
 
 
