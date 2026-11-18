@@ -658,7 +658,7 @@ func _draw_world_background() -> void:
 				var wx := bx + 13 + col * (bw - 25) / 3
 				var wy := base - bh + 18 + row * 35
 				var lit := (int(b["tone"]) + row + col) % 3 != 0
-				draw_rect(Rect2(wx, wy, 11, 16), Color("#ffd58a", 0.75) if lit else Color("#182b3d"))
+				draw_rect(Rect2(wx, wy, 11, 16), Color("#ffd58a") if lit else Color("#182b3d"))
 	draw_rect(Rect2(0, 485, W, 235), Color("#1a2937"))
 	draw_rect(Rect2(0, 506, W, 9), Color("#c7b99b", 0.7))
 
@@ -694,7 +694,7 @@ func _draw_race_world() -> void:
 			draw_circle(Vector2(sx, sy), 15, Color("#ffd45e"))
 			draw_circle(Vector2(sx, sy), 7, Color("#fff0ad"))
 		else:
-			draw_rounded_rect(Rect2(sx - 15, sy - 22, 30, 44), 6, Color("#29bfb2"))
+			draw_rect(Rect2(sx - 15, sy - 22, 30, 44), Color("#29bfb2"))
 			draw_line(Vector2(sx - 5, sy + 10), Vector2(sx + 7, sy - 10), Color.WHITE, 5, true)
 	for vehicle in traffic:
 		if bool(vehicle["passed"]):
